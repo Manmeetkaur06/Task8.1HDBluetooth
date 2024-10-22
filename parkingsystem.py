@@ -11,11 +11,11 @@ GPIO.setup(LED_PIN, GPIO.OUT)
 pwm = GPIO.PWM(LED_PIN, 1000)  # Set PWM frequency to 1kHz
 pwm.start(0)  # Initially, the LED is off
 
-# Replace with your Arduino Nano 33 IoT MAC address
+# Arduino Nano 33 IoT MAC address
 device_address = "08:B6:1F:82:1B:FA"
 
-# UUID of the characteristic that sends sensor data (replace with the correct UUID from your Arduino)
-sensor_characteristic_uuid = "2A56"  # Replace with actual characteristic UUID
+# UUID of the characteristic that sends sensor data 
+sensor_characteristic_uuid = "2A56"  
 
 # Map sensor value to LED brightness (0-100%)
 def map_sensor_to_brightness(sensor_value):
